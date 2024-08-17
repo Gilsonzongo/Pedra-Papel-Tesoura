@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pedra, Papel, Tesoura</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="square"></div>
+    <div id="borda">
+      <h1>Pedra, Papel, Tesoura</h1>
+      <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWTWIK6ZpQicluzLbRabqtA-_ZryeSGJo8b-C97_uy0yZ7J9Y1peu3DaxuXsTcZPGEFMFNkuCP0CrtVvCAAlRAJRYGIqkptO1dVphlV4TrXGr0nFqtfgf34anABmACYobBJbu4R-lDfbg/s1600/jankenpon.jpg"
+        width="90"
+        height="90"
+        alt="Imagem do jogo"
+      />
+      <div>
+        <button onclick="jogar('pedra')" title="Pedra">✊</button>
+        <button onclick="jogar('papel')" title="Papel">✋</button>
+        <button onclick="jogar('tesoura')" title="Tesoura">✌️</button>
+      </div>
+      <p>Você: <span id="pontuacaoUsuario">0</span></p>
+      <p>Computador: <span id="pontuacaoComputador">0</span></p>
+      <div class="result" id="result"></div>
+      <div class="stats" id="stats">
+        <p>Vitórias: <span id="wins">0</span></p>
+        <p>Derrotas: <span id="losses">0</span></p>
+        <p>Empates: <span id="ties">0</span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
